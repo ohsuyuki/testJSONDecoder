@@ -8,18 +8,36 @@
 
 import UIKit
 
+struct Forecast: Codable {
+    
+    enum WeatherType: String, Codable {
+        case sunny, cloudy, rainy, snowy
+    }
+    
+    var dateString = ""
+    var weeks: [WeatherType]
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        guard let sampleFile = Bundle.main.url(forResource: "sample", withExtension: "json") else {
+            return
+        }
 
+        do {
+            let sampleData = try Data(contentsOf: sampleFile)
+            let decoder = JSONDecoder()
+            let sampleJson = try decoder.decode(Forecast.self, from: sampleData)
+            print("dateString: \(sampleJson.dateString)")
+            print("weeks: ")
+            sampleJson.weeks.forEach { print("  \($0)") }
+        } catch {
+            print(error)
+        }
+    }
 
 }
 

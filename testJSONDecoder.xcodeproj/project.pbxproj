@@ -14,6 +14,7 @@
 		1CB891F520C8E23800A42E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB891F320C8E23800A42E3D /* LaunchScreen.storyboard */; };
 		1CB8920020C8E23900A42E3D /* testJSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB891FF20C8E23900A42E3D /* testJSONDecoderTests.swift */; };
 		1CB8920B20C8E23900A42E3D /* testJSONDecoderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8920A20C8E23900A42E3D /* testJSONDecoderUITests.swift */; };
+		1CB8921920C8E28700A42E3D /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB8921820C8E28700A42E3D /* sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1CB8920620C8E23900A42E3D /* testJSONDecoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testJSONDecoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB8920A20C8E23900A42E3D /* testJSONDecoderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJSONDecoderUITests.swift; sourceTree = "<group>"; };
 		1CB8920C20C8E23900A42E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB8921820C8E28700A42E3D /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1CB891F120C8E23800A42E3D /* Assets.xcassets */,
 				1CB891F320C8E23800A42E3D /* LaunchScreen.storyboard */,
 				1CB891F620C8E23800A42E3D /* Info.plist */,
+				1CB8921820C8E28700A42E3D /* sample.json */,
 			);
 			path = testJSONDecoder;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB891F520C8E23800A42E3D /* LaunchScreen.storyboard in Resources */,
+				1CB8921920C8E28700A42E3D /* sample.json in Resources */,
 				1CB891F220C8E23800A42E3D /* Assets.xcassets in Resources */,
 				1CB891F020C8E23800A42E3D /* Main.storyboard in Resources */,
 			);
